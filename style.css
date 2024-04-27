@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap')
+
+* {
+    margin = 0 
+    padding = 0 
+}
+
+body{
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+a{ 
+    transition: all 3000 ease;
+}
+
+nav, .nav-links{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links{
+    gap: 2rem; 
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color:black; 
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover{
+    color:grey; 
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: grey;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+section{
+    padding-top: 4vh;
+    height: 96vh; 
+    margin: 0; 
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+#Home{
+    display:flex;
+    justify-content: center;
+    gap: 5rem; 
+    height: 80vh; 
+}
+
+.home_pfp{
+    display: flex;
+    width: 400px; 
+    height: 400px; 
+    margin: auto, 0; 
+}
+
+.home_text{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home_text_p1{
+    color:gray; 
+    font-size: 1.5rem;
+}
+
+.home_text_title{
+    color: black; 
+    font-size: 3rem;
+}
+
+.home_text_p2{
+    color: gray; 
+    font-size: 1.5rem; 
+}
+
+.about_text{
+    padding-top: 2vh;
+    padding-left: 2vh; 
+    padding-right: 2vh;
+    height: 96vh; 
+    margin: 0; 
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+h3{
+    color: gray; 
+    font-size: 1.5rem;
+}
+
+.about_text_p{
+    color:black; 
+    font-size: 1rem;
+}
+
+.github{
+    height: 50px; 
+    width: 50px; 
+    display: flex; 
+    margin: 0; 
+    cursor: pointer;
+}
+
+
+/*Experience*/
+
+#Experience{
+    display:contents;
+    justify-content: center;
+    gap: 5rem; 
+    height: 200vh; 
+}
+
+h1{
+    text-align: center; 
+    justify-content: center;
+    color: black; 
+    display: flex; 
+    font-size: 2rem;
+    
+}
+
+.experience_text{
+    text-align: center;
+    color:gray; 
+    justify-content: center;
+    display: flex; 
+    font-size: 1.5rem
+}
+
+.experience_skills{
+    padding-top: 2vh;
+    padding-left: 4vh; 
+    padding-right: 4vh;
+    height: 96vh; 
+    margin: 0; 
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.experience_skills_content{
+    border-style: solid;
+    border-color: black;
+    border-radius:25px;
+    text-align: left;
+}
+
+article{
+    padding: 0.5vh;
+    padding-left: 2vh;
+    display:flex;
+    
+}
+
+.pythonlogo{
+    height: 100px; 
+    width: 100px;
+    margin: auto, 0;
+}
+
+.experience_skills_content-text{
+    padding-left: 2vh;
+}
+
+
+/*Experience-2024*/
+
+.twofour, .twothree{
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+    margin-top: 80px;
+    padding: 10vh;
+}
+
+
+
+.prev, .next, .prev23, .next23 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next, .next23 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev, .prev23{
+    left:0; 
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover, .prev23:hover, .next23:hover{
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+/*More 
+/* Travel*/
+
+.Travel{
+    justify-content: center;
+    display:contents;
+    height: 200vh; 
+    text-align: center;
+    align-items: center;
+}
+
+.worldmap{
+    align-items: center;
+    height: 450px; 
+}
