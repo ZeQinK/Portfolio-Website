@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap')
 
 * {
@@ -59,8 +61,8 @@ a:hover{
 }
 
 section{
-    padding-top: 4vh;
-    height: 96vh; 
+    padding-top: 8vh;
+    height:fit-content;
     margin: 0; 
     box-sizing: border-box;
     min-height: fit-content;
@@ -102,7 +104,7 @@ section{
 }
 
 .about_text{
-    padding-top: 2vh;
+    padding-top: 28vh;
     padding-left: 2vh; 
     padding-right: 2vh;
     height: 96vh; 
@@ -121,23 +123,22 @@ h3{
     font-size: 1rem;
 }
 
-.github{
+.github, .linkdin, .gmail{
     height: 50px; 
     width: 50px; 
     display: flex; 
     margin: 0; 
     cursor: pointer;
+    padding: 10px; 
 }
 
+.connect{
+    display: flex; 
+}
 
 /*Experience*/
 
-#Experience{
-    display:contents;
-    justify-content: center;
-    gap: 5rem; 
-    height: 200vh; 
-}
+
 
 h1{
     text-align: center; 
@@ -197,7 +198,7 @@ article{
     max-width: 1500px;
     position: relative;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 10px;
     padding: 10vh;
 }
 
@@ -205,7 +206,7 @@ article{
 
 .prev, .next, .prev23, .next23 {
     cursor: pointer;
-    position: absolute;
+    position:absolute;
     top: 50%;
     width: auto;
     margin-top: -22px;
@@ -242,19 +243,84 @@ article{
     to {opacity: 1}
   }
 
+  .modal{
+    display: none;
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+   
+  }
 
-/*More 
-/* Travel*/
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
 
-.Travel{
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .achievement-img {
+    display:flex; 
+    width: 300px; 
+    height: 200px; 
+    padding-top: 10px; 
+  }
+
+  .achievement-content{
+    display: inline-flex
+  }
+/*More*/
+
+/*Leadership*/
+.Leadership{
     justify-content: center;
-    display:contents;
-    height: 200vh; 
-    text-align: center;
-    align-items: center;
+    height: 200vh;
+    padding-top: 2vh;
 }
 
-.worldmap{
-    align-items: center;
-    height: 450px; 
+.leadership_t{
+    text-align: center;
+    color: gray;
+
+}
+
+.l-exp{
+    padding: 28px; 
+
+}
+
+.leadership-exp{
+    display: flex; 
+
+}
+
+
+/*footer*/
+
+footer{
+    height: 26vh;
+    margin: 0, 1rem; 
+
+}
+
+.footer-p{
+    text-align: center;
+    color: grey; 
 }
